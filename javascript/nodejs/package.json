@@ -20,6 +20,9 @@
   },
   "homepage": "https://github.com/gmartinezramirez/boilerplates#readme",
   "devDependencies": {
+    "@stryker-mutator/core": "^3.2.3",
+    "@stryker-mutator/javascript-mutator": "^3.2.3",
+    "@stryker-mutator/jest-runner": "^3.2.3",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-import": "^2.20.2",
@@ -27,6 +30,7 @@
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^2.5.1",
     "husky": "^4.2.5",
+    "jest": "^26.0.1",
     "prettier": "2.0.5",
     "pretty-quick": "^2.0.1"
   }
