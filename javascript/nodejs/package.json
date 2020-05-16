@@ -1,0 +1,22 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "boilerplate for nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmartinezramirez/boilerplates.git"
+  },
+  "keywords": [
+    "boilerplate"
+  ],
+  "author": "gmartinezramirez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gmartinezramirez/boilerplates/issues"
+  },
+  "homepage": "https://github.com/gmartinezramirez/boilerplates#readme"
+}
