@@ -1,29 +1,42 @@
 {
-    "env": {
-        "browser": true,
-        "es6": true,
-        "node": true,
-	"jest": true
-    },
-    "extends": [
-        "plugin:react/recommended",
-	"eslint:recommended",
-        "airbnb"
-    ],
-    "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
-    },
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 11,
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react"
-    ],
-    "rules": {
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "extends": [
+    "react-app",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:security/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:testing-library/recommended",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["react", "react-hooks","jest", "import", "security", "jsx-a11y","prettier", "testing-library","jest-dom"],
+  "settings": {
+    "react": {
+      "version": "detect"
     }
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "react-hooks/rules-of-hooks": ["error"],
+    "react-hooks/exhaustive-deps": ["warn"],
+    "no-console": ["error"]
+  }
 }
